@@ -11,5 +11,5 @@ Requirements:
 
 Other requirements:
 
-* To submit the code, you need to create fork from the current version of the repo, made changes there and then provide the link to it to the recruiter.
+* To submit the code, you need to create fork from the current version of the repo, make changes there and then provide the link to it to the recruiter.
 * Your repo should be public to enable verification
