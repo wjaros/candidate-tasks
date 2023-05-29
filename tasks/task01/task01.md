@@ -1,6 +1,6 @@
-*Task 01 - Simple Java test* 
+*Task 01 - Writing simple tests* 
 
-Write a test case for a login page in the [task](task01.java) file that checks whether a user can log in with valid credentials.
+Write a test case for a login page function in the task file ([Java](task01.java), [JavaScript](task01.js), [TypeScript](task01.js), [C#](task01.cs), [Python](task01.py)) file that checks whether a user can log in with valid credentials.
 Write the test case in a test framework of your choice (e.g. JUnit, TestNG, etc.).
 
 Requirements:
