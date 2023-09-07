@@ -1,0 +1,3 @@
+export ={ 
+    errorBanner: {css: "#error"}
+}
