@@ -2,24 +2,29 @@ import common from "./common";
 import { UserCredentials } from "../DataObjects/userCredentials";
 
 const { I } = inject();
+const invalidLoginMsg = "Your username is invalid!";
 
 export = {
-	...common,
-	url: "practice-test-login/",
+  ...common,
+  invalidLoginMsg,
+  url: "practice-test-login/",
+	successfullLoginUrl: "logged-in-successfully/",
 
-	usernameInput: { css: "#username" },
+
+	loginError: locate(common.errorBanner!).withText(invalidLoginMsg),
 	passwordInput: { css: "#password" },
-
-	submitButton: { css: "#submit" },
 	postTitle: { css: ".post-title" },
-	open() {
-		I.amOnPage(this.url);
-		I.waitForElement(this.usernameInput);
+	submitButton: { css: "#submit" },
+	usernameInput: { css: "#username" },
+	
+  open() { //method to open login page
+		I.amOnPage(this.url); //open loginPage url
+		I.waitForElement(this.usernameInput); //verify that expected page was loaded
 	},
 
-	login(userCredentials: UserCredentials) {
-		I.appendField(this.usernameInput, userCredentials.username);
-		I.appendField(this.passwordInput, userCredentials.password);
-		I.click(this.submitButton);
+	login(userCredentials: UserCredentials) { //method to peroform login with provided user object
+		I.appendField(this.usernameInput, userCredentials.username); //clear username input field and fill it with username
+		I.appendField(this.passwordInput, userCredentials.password); //clear password input filed and fill it with password
+		I.click(this.submitButton); //submit login data
 	}
 };

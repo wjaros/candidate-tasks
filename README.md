@@ -1,2 +1,11 @@
-# candidate-tasks
-This repository will contain examples of typical tasks for the candidates to read and perform in order to come to the interview
+## HOW TO EXECUTE?
+
+To execute prepared tests please clone the repository and run below commands:
+
+```
+npm i
+```
+
+```
+npm run codeceptjs
+```

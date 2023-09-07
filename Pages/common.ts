@@ -1,3 +1,3 @@
-export ={ 
-    errorBanner: {css: "#error"}
-}
+export = {
+	errorBanner: { css: "#error" }
+};
